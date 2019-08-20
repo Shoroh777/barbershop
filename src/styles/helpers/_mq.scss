@@ -1,3 +1,17 @@
+$mobile-screen: "(min-width: 320px)";
+
+@function get-vw($target) {
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
+
+@mixin vw($size) {
+    font-size: get-vw($size);
+    @media #{$mobile-screen} {
+        font-size: $size;
+    }
+}
+
 @mixin for-phone-only {
     @media (max-width: 767px) { @content; }
 }
