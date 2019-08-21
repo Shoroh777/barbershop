@@ -40,9 +40,113 @@
         </section>
     </header>
     <main class="container">
-        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+        <section class="sign-up">
+            <h2 class="sign-up__headline">Запись на стрижку</h2>
     
-        
+            <form class="sign-up__form">
+            
+                <fieldset class="sign-up__text-data">
+                    <legend class="sign-up__headline">Запись на стрижку</legend>
+            
+                    <input type="text" name="user-surname" class="form__surname" placeholder="Фамилия">
+                    <input type="text" name="user-name" class="form__name" placeholder="Имя">
+                    <input type="text" name="user-second-name" class="form__second-name" placeholder="Отчество">
+            
+                    <input type="number" name="user-phone" class="form__phone" placeholder="Контактный телефон">
+                    <input type="email" name="user-mail" class="form__e-mail" placeholder="Контактный e-mail">
+            
+                    <textarea name="additional-information" class="form__additional-info" placeholder="Доп. информация для мастера"></textarea>
+                </fieldset>
+            
+                <fieldset class="sign-up__beard-type">
+                    <legend class="sign-up__beard-headline">Выберите модель бороды:</legend>
+                
+                    <ul class="sign-up__beard-list">
+                        <li class="sign-up__beard-item">
+                            <label class="sign-up__beard-label">
+                                <input type="radio" name="beard-type" value="admiral" class="sign-up__beard-checkbox" checked>
+                                адмирал
+                                <img src="" alt="" class="sign-up__beard-img">
+                            </label>
+                        </li>
+                        <li class="sign-up__beard-item">
+                            <label class="sign-up__beard-label">
+                                <input type="radio" name="beard-type" value="lumberjack" class="sign-up__beard-checkbox">
+                                лесоруб
+                                <img src="" alt="" class="sign-up__beard-img">
+                            </label>
+                        </li>
+                        <li class="sign-up__beard-item">
+                            <label class="sign-up__beard-label">
+                                <input type="radio" name="beard-type" value="polar" class="sign-up__beard-checkbox">
+                                полярник
+                                <img src="" alt="" class="sign-up__beard-img">
+                            </label>
+                        </li>
+                        <li class="sign-up__beard-item">
+                            <label class="sign-up__beard-label">
+                                <input type="radio" name="beard-type" value="boyar" class="sign-up__beard-checkbox">
+                                боярин
+                                <img src="" alt="" class="sign-up__beard-img">
+                            </label>
+                        </li>
+                        <li class="sign-up__beard-item">
+                            <label class="sign-up__beard-label">
+                                <input type="radio" name="beard-type" value="sage" class="sign-up__beard-checkbox">
+                                мудрец
+                                <img src="" alt="" class="sign-up__beard-img">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            
+                <fieldset class="sign-up__additional">
+                    <legend class="sign-up__additional-headline">Дополнительные услуги:</legend>
+                
+                    <ul class="sign-up__additional-list">
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="tint-beard" class="sign-up__additional-checkbox" checked>
+                                Подкрасить бороду
+                            </label>
+                        </li>
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="wind-mustache" class="sign-up__additional-checkbox" checked>
+                                Накрутить усы
+                            </label>
+                        </li>
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="comb-beard" class="sign-up__additional-checkbox">
+                                Причесать бороду
+                            </label>
+                        </li>
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="align-temples" class="sign-up__additional-checkbox">
+                                Подровнять виски
+                            </label>
+                        </li>
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="remove-gray-hair" class="sign-up__additional-checkbox">
+                                Убрать седину
+                            </label>
+                        </li>
+                        <li class="sign-up__additional-item">
+                            <label class="sign-up__additional-label">
+                                <input type="checkbox" name="additional-service" value="polish-bald-head" class="sign-up__additional-checkbox">
+                                Отполировать лысину
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            
+                <button type="submit" class="form__submit">Отправить заявку</button>
+            
+            </form>
+        </section>
     </main>
     <footer>
     
