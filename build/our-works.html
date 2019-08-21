@@ -14,13 +14,12 @@
         <section class="header__container">
             <div class="logo">
                 <a href="index.html" class="logo__link">
-                    <img src="" alt="" class="logo__barbershop-img">
-                    <div class="logo__name-logo">
-                        <img src="" alt="" class="logo__dot-img">
-                        <img src="" alt="" class="logo__main-img">
-                        <img src="" alt="" class="logo__dot-img">
-                    </div>
-                    <img src="" alt="" class="logo__mustache-img">
+                    <picture class="logo__barbershop-pic">
+                        <source srcset="img/header/logotype-mobile.png" media="(max-width: 767px)">
+                        <source srcset="img/header/logotype-tablet.png" media="(max-width: 1199px)">
+                        <source srcset="img/header/logotype-desktop.png" media="(min-width: 1200px)">
+                        <img src="img/header/logotype-mobile.png" alt="Перейти на главную страницу" class="logo__barbershop-img">
+                    </picture>
                 </a>
             </div>
             <nav class="header__nav">
@@ -33,7 +32,10 @@
                 </ul>
                 <ul class="header__user-nav">
                     <li class="header__login-enter">
-                        <a href="#" class="header__login-link">Вход</a>
+                        <a href="#" class="header__login-link">
+                            <img src="img/header/login.png" alt="Вход" class="header__login-img">
+                            Вход
+                        </a>
                     </li>
                 </ul>
             </nav>
