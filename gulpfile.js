@@ -42,9 +42,9 @@ const config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    tunnel: false,
     host: 'localhost',
-    port: 4550,
+    port: 3000,
     logPrefix: "Shoroh_Server"
 };
 
@@ -111,6 +111,13 @@ buildFonts = (done) => {
     done();
 };
 
+addSlick = (done) => {
+    gulp.src("./src/slick/**/*.*")
+        .pipe(gulp.dest("build/slick"));
+
+    done();
+};
+
 watchFiles = () => {
     gulp.watch(path.watch.html, buildHtml);
     gulp.watch(path.watch.js, buildJs);
@@ -131,7 +138,8 @@ gulp.task('build', gulp.parallel(
     buildJs,
     buildStyles,
     buildFonts,
-    buildImage
+    buildImage,
+    addSlick
 ));
 
 gulp.task('watch', watchFiles);
