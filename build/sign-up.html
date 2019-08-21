@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <section class="header__container">
             <div class="logo">
                 <a href="index.html" class="logo__link">
@@ -24,24 +24,24 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="index.html">Главная</a></li>
-                    <li class="header__item"><a href="our-works.html">Наши работы</a></li>
-                    <li class="header__item"><a href="sign-up.html">Записаться</a></li>
-                    <li class="header__item"><a href="">Контакты</a></li>
-                    <li class="header__item"><a href="">Html Academy</a></li>
+                    <li class="header__item"><a href="index.html" class="header__item-link">Главная</a></li>
+                    <li class="header__item"><a href="our-works.html" class="header__item-link">Наши работы</a></li>
+                    <li class="header__item"><a href="sign-up.html" class="header__item-link">Записаться</a></li>
+                    <li class="header__item"><a href="" class="header__item-link">Контакты</a></li>
+                    <li class="header__item"><a href="" class="header__item-link">Html Academy</a></li>
                 </ul>
                 <ul class="header__user-nav">
                     <li class="header__login-enter">
                         <a href="#" class="header__login-link">
                             <img src="img/header/login.png" alt="Вход" class="header__login-img">
-                            Вход
+                            <span class="header__login-text">Вход</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
     </header>
-    <main class="container">
+    <main class="sign-up__container">
         <section class="sign-up">
             <h2 class="sign-up__headline">Запись на стрижку</h2>
     
@@ -53,37 +53,37 @@
                     <ul class="sign-up__text-list">
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-surname" class="form__surname" placeholder="Фамилия">
+                                <input type="text" name="user-surname" class="form__surname form__input" placeholder="Фамилия">
                                 <span class="visually-hidden">Введите свою фамилию</span>
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-name" class="form__name" placeholder="Имя">
+                                <input type="text" name="user-name" class="form__name form__input" placeholder="Имя">
                                 <span class="visually-hidden">Введите свое имя</span>
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-second-name" class="form__second-name" placeholder="Отчество">
+                                <input type="text" name="user-second-name" class="form__second-name form__input" placeholder="Отчество">
                                 <span class="visually-hidden">Введите свое отчество</span>
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="number" name="user-phone" class="form__phone" placeholder="Контактный телефон">
+                                <input type="number" name="user-phone" class="form__phone form__input" placeholder="Контактный телефон">
                                 <span class="visually-hidden">Введите свой телефон</span>
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="email" name="user-mail" class="form__e-mail" placeholder="Контактный e-mail">
+                                <input type="email" name="user-mail" class="form__e-mail form__input" placeholder="Контактный e-mail">
                                 <span class="visually-hidden">Введите свой e-mail</span>
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <textarea name="additional-information" class="form__additional-info" placeholder="Доп. информация для мастера"></textarea>
+                                <textarea name="additional-information" class="form__additional-info form__input" placeholder="Доп. информация для мастера"></textarea>
                                 <span class="visually-hidden">Дополнительная информация для мастера</span>
                             </label>
                         </li>
@@ -98,35 +98,35 @@
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="admiral" class="sign-up__beard-checkbox" checked>
                                 адмирал
-                                <img src="" alt="" class="sign-up__beard-img">
+                                <img src="img/form/beard-1.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="lumberjack" class="sign-up__beard-checkbox">
                                 лесоруб
-                                <img src="" alt="" class="sign-up__beard-img">
+                                <img src="img/form/beard-2.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="polar" class="sign-up__beard-checkbox">
                                 полярник
-                                <img src="" alt="" class="sign-up__beard-img">
+                                <img src="img/form/beard-3.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="boyar" class="sign-up__beard-checkbox">
                                 боярин
-                                <img src="" alt="" class="sign-up__beard-img">
+                                <img src="img/form/beard-4.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="sage" class="sign-up__beard-checkbox">
                                 мудрец
-                                <img src="" alt="" class="sign-up__beard-img">
+                                <img src="img/form/beard-5.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                     </ul>
@@ -180,7 +180,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
     
         <section class="address">
         
@@ -206,17 +206,17 @@
             <ul class="social__list">
                 <li class="social__item">
                     <a href="#" class="social__link">
-                        <img src="img/footer/vk-icon-big.png" alt="Перейти на наш VK">
+                        <img class="social__img" src="img/footer/vk-icon-big.png" alt="Перейти на наш VK">
                     </a>
                 </li>
                 <li class="social__item">
                     <a href="#" class="social__link">
-                        <img src="img/footer/facebook-icon-big.png" alt="Перейти на наш Facebook">
+                        <img class="social__img" src="img/footer/facebook-icon-big.png" alt="Перейти на наш Facebook">
                     </a>
                 </li>
                 <li class="social__item">
                     <a href="#" class="social__link">
-                        <img src="img/footer/insta-icon-big.png" alt="Перейти на наш Instagram">
+                        <img class="social__img" src="img/footer/insta-icon-big.png" alt="Перейти на наш Instagram">
                     </a>
                 </li>
             </ul>
