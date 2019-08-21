@@ -10,21 +10,31 @@
     <div class="reviews__comment">
         <button class="reviews__control-left">
             <span class="visually-hidden">Предидущий отзыв</span>
-            <img src="" alt="" class="reviews__control-img">
+            <picture class="reviews__control-pic">
+                <source srcset="" media="(max-width: 767px)">
+                <source srcset="img/index/reviews/reviews-control-left.png" media="(max-width: 1199px)">
+                <source srcset="img/index/reviews/reviews-control-left.png" media="(min-width: 1200px)">
+                <img src="" alt="" class="reviews__control-img">
+            </picture>
         </button>
 
         //= reviews__list/reviews__list.html
 
         <button class="reviews__control-right">
             <span class="visually-hidden">Следующий отзыв</span>
-            <img src="" alt="" class="reviews__control-img">
+            <picture class="reviews__control-pic">
+                <source srcset="" media="(max-width: 767px)">
+                <source srcset="img/index/reviews/reviews-control-right.png" media="(max-width: 1199px)">
+                <source srcset="img/index/reviews/reviews-control-right.png" media="(min-width: 1200px)">
+                <img src="" alt="" class="reviews__control-img">
+            </picture>
         </button>
     </div>
 
     <div class="reviews__indicators">
-        <img src="" alt="" class="reviews__indicator-img">
-        <img src="" alt="" class="reviews__indicator-img">
-        <img src="" alt="" class="reviews__indicator-img">
+        <img src="img/index/reviews/reviews__indicator-current.png" alt="" class="reviews__indicator-img">
+        <img src="img/index/reviews/reviews__indicator.png" alt="" class="reviews__indicator-img">
+        <img src="img/index/reviews/reviews__indicator.png" alt="" class="reviews__indicator-img">
     </div>
 
 </section>
