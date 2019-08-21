@@ -13,7 +13,7 @@
     <header>
         <section class="header__container">
             <div class="logo">
-                <a href="" class="logo__link">
+                <a href="index.html" class="logo__link">
                     <img src="" alt="" class="logo__barbershop-img">
                     <div class="logo__name-logo">
                         <img src="" alt="" class="logo__dot-img">
@@ -32,7 +32,9 @@
                     <li class="header__item"><a href="">Html Academy</a></li>
                 </ul>
                 <ul class="header__user-nav">
-                    <li class="header__login-enter">Вход</li>
+                    <li class="header__login-enter">
+                        <a href="#" class="header__login-link">Вход</a>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -101,6 +103,12 @@
                 </li>
             </ul>
         
+            <div class="feature__indicators">
+                <img src="" alt="" class="feature__indicator-img">
+                <img src="" alt="" class="feature__indicator-img">
+                <img src="" alt="" class="feature__indicator-img">
+            </div>
+        
         </section>
         <section class="news">
         
@@ -114,31 +122,37 @@
         
             <ul class="news__list">
                 <li class="news__item">
-                    <div class="news__date">
-                        <h3 class="news__date-value">29</h3>
-                        <p class="news__month">сент</p>
-                    </div>
-                    <p class="news__text">
-                        Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.
-                    </p>
+                    <a href="#" class="news__link">
+                        <div class="news__date">
+                            <h3 class="news__date-value">29</h3>
+                            <p class="news__month">сент</p>
+                        </div>
+                        <p class="news__text">
+                            Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.
+                        </p>
+                    </a>
                 </li>
                 <li class="news__item">
-                    <div class="news__date">
-                        <h3 class="news__date-value">19</h3>
-                        <p class="news__month">сент</p>
-                    </div>
-                    <p class="news__text">
-                        В нашей команде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите записаться!
-                    </p>
+                    <a href="#" class="news__link">
+                        <div class="news__date">
+                            <h3 class="news__date-value">19</h3>
+                            <p class="news__month">сент</p>
+                        </div>
+                        <p class="news__text">
+                            В нашей команде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите записаться!
+                        </p>
+                    </a>
                 </li>
                 <li class="news__item">
-                    <div class="news__date">
-                        <h3 class="news__date-value">9</h3>
-                        <p class="news__month">сент</p>
-                    </div>
-                    <p class="news__text">
-                        Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
-                    </p>
+                    <a href="#" class="news__link">
+                        <div class="news__date">
+                            <h3 class="news__date-value">9</h3>
+                            <p class="news__month">сент</p>
+                        </div>
+                        <p class="news__text">
+                            Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+                        </p>
+                    </a>
                 </li>
             </ul>
         
@@ -149,10 +163,14 @@
         
             <button class="reviews__button">
                 Оставить свой
+                <span class="visually-hidden">комментарий.</span>
             </button>
         
             <div class="reviews__comment">
-                <button class="reviews__control-left"></button>
+                <button class="reviews__control-left">
+                    <span class="visually-hidden">Предидущий отзыв</span>
+                    <img src="" alt="" class="reviews__control-img">
+                </button>
         
                 <ul class="reviews__list">
                 
@@ -168,7 +186,10 @@
                 
                 </ul>
         
-                <button class="reviews__control-right"></button>
+                <button class="reviews__control-right">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                    <img src="" alt="" class="reviews__control-img">
+                </button>
             </div>
         
             <div class="reviews__indicators">
@@ -190,10 +211,10 @@
         
             <p class="address__text">
                 г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-                <span class="address__tel">
+                <label for="address__number-id" class="address__tel">
                     Тел.:
-                </span>
-                <a href="" class="address__number">
+                </label>
+                <a href="tel:+78125556666" class="address__number" id="address__number-id">
                     +7 (812) 555-66-66
                 </a>
             </p>
@@ -205,13 +226,19 @@
         
             <ul class="social__list">
                 <li class="social__item">
-                    <img src="" alt="">
+                    <a href="#" class="social__link">
+                        <img src="" alt="Перейти на наш VK">
+                    </a>
                 </li>
                 <li class="social__item">
-                    <img src="" alt="">
+                    <a href="#" class="social__link">
+                        <img src="" alt="Перейти на наш Facebook">
+                    </a>
                 </li>
                 <li class="social__item">
-                    <img src="" alt="">
+                    <a href="#" class="social__link">
+                        <img src="" alt="Перейти на наш Instagram">
+                    </a>
                 </li>
             </ul>
         
@@ -222,7 +249,7 @@
                 Разработано:
             </h2>
         
-            <a href="" class="design-by-academy__link">
+            <a href="https://htmlacademy.ru" class="design-by-academy__link">
                 Html Academy
             </a>
         
