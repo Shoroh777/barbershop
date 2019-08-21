@@ -1,10 +1,17 @@
 .logo {
+    padding: 29px 0 26px;
+    display: flex;
+    justify-content: center;
 
     .logo__link {
 
         .logo__barbershop-pic {
 
             .logo__barbershop-img {
+
+                @include for-phone-only {
+                    width: 70.625vw;
+                }
 
             }
         }

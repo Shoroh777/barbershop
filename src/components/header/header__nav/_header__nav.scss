@@ -1,16 +1,56 @@
 .header__nav {
+    justify-self: flex-start;
+    position: relative;
+    background-color: #826550;
+
+    .header__nav-menu-mobile {
+        display: none;
+
+        @include for-phone-only {
+            max-height: 50px;
+            padding: 15px 17px;
+            right: 0;
+
+            display: block;
+            position: absolute;
+            background-color: #6a4d38;
+        }
+    }
 
     .header__list {
+        margin: 0;
 
         .header__item {
+            min-height: 50px;
+
+            @include for-phone-only {
+                display: none;
+            }
+
 
             .header__item-link {
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
 
+        .header__item--current {
+            @include for-phone-only {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
 
     .header__user-nav {
+        @include for-phone-only {
+            display: none;
+            margin: 0;
+        }
 
         .header__login-enter {
 

@@ -42,7 +42,7 @@ const config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: false,
+    tunnel: true,
     host: 'localhost',
     port: 4550,
     logPrefix: "Shoroh_Server"

@@ -1,13 +1,43 @@
 .price__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 
     .price__element {
+        height: 78px;
+        padding: 0 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &:nth-child(1) {
+            background-color: #404040;
+        }
+        &:nth-child(2) {
+            background-color: #4e4e4e;
+        }
+        &:nth-child(3) {
+            background-color: #353535;
+        }
+        &:nth-child(4) {
+            background-color: #404040;
+        }
 
         .price__value {
-
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 0.45;
         }
 
         .price__description {
-            
+            width: 34.375vw;
+            font-size: 18px;
+            color: rgb(247, 244, 241);
+            line-height: 1;
+            text-align: right;
         }
     }
 }
