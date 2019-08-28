@@ -1,32 +1,90 @@
 .news {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f5f2;
+
+    padding: 35px 20px 28px 20px;
+    border-bottom: 1px solid #e5ddd5;
 
     .news__headline {
-
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+        margin: 0;
     }
 
     .news__button {
-
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: center;
+        order: 4;
+        padding: 17px;
+        border: 1px solid #e5ddd5;
     }
 
     .news__list {
+        margin: 10px 0 0 0;
 
         .news__item {
+            margin-top: 25px;
+            padding-bottom: 20px;
+
+            &:first-child {
+                border-bottom: 1px solid #e5ddd5;
+            }
+
+            &:last-child {
+                display: none;
+            }
 
             .news__link {
+                display: flex;
+                justify-content: space-around;
 
                 .news__date {
+                    background-color: black;
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 10px;
 
                     .news__date-value {
-
+                        font-size: 30px;
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        line-height: 1;
+                        text-align: center;
+                        margin: 5px 0 0 0;
                     }
 
                     .news__month {
+                        font-size: 16px;
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                        margin: -5px;
+                    }
 
+                    .news__link-arrow {
+                        width: 0;
+                        height: 0;
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                        border-top: 10px solid black;
+                        margin-top: 6.8px;
                     }
                 }
 
                 .news__text {
-
+                    width: 65.625vw;
+                    font-size: 18px;
+                    color: rgb(0, 0, 0);
+                    line-height: 1.5;
+                    margin: 0;
                 }
             }
         }

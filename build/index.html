@@ -132,6 +132,7 @@
                             <div class="news__date">
                                 <h3 class="news__date-value">29</h3>
                                 <p class="news__month">сент</p>
+                                <div class="news__link-arrow"></div>
                             </div>
                             <p class="news__text">
                                 Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.
@@ -143,6 +144,7 @@
                             <div class="news__date">
                                 <h3 class="news__date-value">19</h3>
                                 <p class="news__month">сент</p>
+                                <div class="news__link-arrow"></div>
                             </div>
                             <p class="news__text">
                                 В нашей команде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите записаться!
@@ -154,6 +156,7 @@
                             <div class="news__date">
                                 <h3 class="news__date-value">9</h3>
                                 <p class="news__month">сент</p>
+                                <div class="news__link-arrow"></div>
                             </div>
                             <p class="news__text">
                                 Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
@@ -195,6 +198,36 @@
                             </div>
                         </li>
                     
+                        <li class="reviews__item">
+                            <picture class="reviews__pic">
+                                <source srcset="img/index/reviews/reviews-img-1.jpg" media="(max-width: 767px)">
+                                <source srcset="img/index/reviews/reviews-img-1-tablet.png" media="(max-width: 1199px)">
+                                <source srcset="img/index/reviews/reviews-img-1-desktop.jpg" media="(min-width: 1200px)">
+                                <img src="img/index/reviews/reviews-img-1.jpg" alt="Перейти на главную страницу" class="reviews__img">
+                            </picture>
+                            <div class="reviews__person">
+                                <h3 class="reviews__name">Трэвис Баркер</h3>
+                                <p class="reviews__text">
+                                    Спасибо за лысину! Был проездом в Москве, заскочил побриться чтобы было видно новую татуировку!
+                                </p>
+                            </div>
+                        </li>
+                    
+                        <li class="reviews__item">
+                            <picture class="reviews__pic">
+                                <source srcset="img/index/reviews/reviews-img-1.jpg" media="(max-width: 767px)">
+                                <source srcset="img/index/reviews/reviews-img-1-tablet.png" media="(max-width: 1199px)">
+                                <source srcset="img/index/reviews/reviews-img-1-desktop.jpg" media="(min-width: 1200px)">
+                                <img src="img/index/reviews/reviews-img-1.jpg" alt="Перейти на главную страницу" class="reviews__img">
+                            </picture>
+                            <div class="reviews__person">
+                                <h3 class="reviews__name">Трэвис Баркер</h3>
+                                <p class="reviews__text">
+                                    Спасибо за лысину! Был проездом в Москве, заскочил побриться чтобы было видно новую татуировку!
+                                </p>
+                            </div>
+                        </li>
+                    
                     </ul>
             
                     <button class="reviews__control-right">
@@ -203,13 +236,9 @@
                     </button>
                 </div>
             
-                <div class="reviews__indicators">
-                    <img src="img/index/reviews/reviews__indicator-current.png" alt="" class="reviews__indicator-img">
-                    <img src="img/index/reviews/reviews__indicator.png" alt="" class="reviews__indicator-img">
-                    <img src="img/index/reviews/reviews__indicator.png" alt="" class="reviews__indicator-img">
-                </div>
-            
             </section>
+            
+            <div class="news-after"></div>
     
         </div>
     </main>
@@ -222,7 +251,7 @@
             </h2>
         
             <p class="address__text">
-                г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+                <span class="address__text-line">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
                 <label for="address__number-id" class="address__tel">
                     Тел.:
                 </label>
@@ -272,18 +301,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('.feature__list').slick({
-                arrows: false,
-                dots: true,
-                dotsClass: 'feature-indicator__dots feature-indicator',
-                customPaging: function() {
-                    return '<div class="feature-indicator__img"></div>'
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

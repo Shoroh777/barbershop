@@ -1,10 +1,27 @@
 .design-by-academy {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 
     .design-by-academy__headline {
-
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        text-align: center;
+        font-weight: normal;
     }
 
     .design-by-academy__link {
-        
+        align-self: flex-start;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: center;
+        padding: 17px;
+        width: 100%;
+        border: 1px solid #3e3e3e;
+        box-sizing: border-box;
     }
 }

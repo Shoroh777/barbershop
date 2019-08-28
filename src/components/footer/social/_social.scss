@@ -1,13 +1,26 @@
 .social {
 
+    .social__headline {
+        display: none;
+    }
+
     .social__list {
+        display: flex;
+        justify-content: space-between;
 
         .social__item {
+            border: 1px solid #3f3f3f;
+            width: 33.3333333vw;
+            height: 100px;
 
             .social__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
 
                 .social__img {
-
+                    margin:  0;
                 }
             }
         }
