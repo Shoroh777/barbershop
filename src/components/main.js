@@ -20,3 +20,19 @@ $(document).ready(function(){
         }
     });
 });
+
+var menuImg = document.querySelector('.header__nav-img');
+var isOpen = false;
+
+
+function openMenu() {
+    if (isOpen) {
+        $(".header__nav-img").attr("src", "img/header/menu-button.png");
+        $(".header__nav-menu-mobile").toggleClass("header__nav-menu-mobile-close");
+        isOpen = !isOpen;
+    } else {
+        $(".header__nav-img").attr("src", "img/header/menu-close.png");
+        $(".header__nav-menu-mobile").toggleClass("header__nav-menu-mobile-close");
+        isOpen = !isOpen;
+    }
+};
