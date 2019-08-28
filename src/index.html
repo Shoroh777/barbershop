@@ -24,7 +24,14 @@
 
     <script>
         $(document).ready(function(){
-            $('.feature__list').slick();
+            $('.feature__list').slick({
+                arrows: false,
+                dots: true,
+                dotsClass: 'feature-indicator__dots feature-indicator',
+                customPaging: function() {
+                    return '<div class="feature-indicator__img"></div>'
+                }
+            });
         });
     </script>
 </body>

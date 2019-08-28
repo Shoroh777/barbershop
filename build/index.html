@@ -113,13 +113,9 @@
                     </li>
                 </ul>
             
-                <div class="feature__indicators">
-                    <img src="" alt="" class="feature__indicator-img">
-                    <img src="" alt="" class="feature__indicator-img">
-                    <img src="" alt="" class="feature__indicator-img">
-                </div>
-            
             </section>
+            
+            <div class="feature-after"></div>
             <section class="news">
             
                 <h2 class="news__headline">
@@ -279,7 +275,14 @@
 
     <script>
         $(document).ready(function(){
-            $('.feature__list').slick();
+            $('.feature__list').slick({
+                arrows: false,
+                dots: true,
+                dotsClass: 'feature-indicator__dots feature-indicator',
+                customPaging: function() {
+                    return '<div class="feature-indicator__img"></div>'
+                }
+            });
         });
     </script>
 </body>
