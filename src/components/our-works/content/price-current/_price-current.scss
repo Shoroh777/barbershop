@@ -1,6 +1,19 @@
 .price-current {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #353535;
 
     .price-current__headline {
-
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0;
     }
 }

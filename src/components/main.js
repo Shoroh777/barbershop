@@ -29,10 +29,14 @@ function openMenu() {
     if (isOpen) {
         $(".header__nav-img").attr("src", "img/header/menu-button.png");
         $(".header__nav-menu-mobile").toggleClass("header__nav-menu-mobile-close");
+        $(".header__nav").toggleClass("header__nav--open");
+        $(".logo").toggleClass("logo-nav--open");
         isOpen = !isOpen;
     } else {
         $(".header__nav-img").attr("src", "img/header/menu-close.png");
         $(".header__nav-menu-mobile").toggleClass("header__nav-menu-mobile-close");
+        $(".header__nav").toggleClass("header__nav--open");
+        $(".logo").toggleClass("logo-nav--open");
         isOpen = !isOpen;
     }
 };

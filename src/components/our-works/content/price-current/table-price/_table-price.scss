@@ -1,17 +1,22 @@
 .table-price {
+    margin: 20px 0;
 
     .table-price__service {
+        display: flex;
 
         .table-price__service-number {
-
+            display: none;
         }
 
         .table-price__service-name {
-
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.35;
         }
 
         .table-price__service-additional {
-
+            order: 3;
         }
 
         .table-price__service-price {
