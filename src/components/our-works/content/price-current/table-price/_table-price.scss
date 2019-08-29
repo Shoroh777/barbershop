@@ -1,11 +1,14 @@
 .table-price {
-    margin: 20px 0;
+    margin: 0;
 
     .table-price__service {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         .table-price__service-number {
             display: none;
+            margin: 0;
         }
 
         .table-price__service-name {
@@ -13,14 +16,30 @@
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 1.35;
+            margin: 15px 0 0 0;
         }
 
         .table-price__service-additional {
             order: 3;
+            width: 100%;
+            margin: 0;
+
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+
+            &::before {
+                content: '(';
+            }
+            &::after {
+                content: ')';
+            }
         }
 
         .table-price__service-price {
-
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            line-height: 1.35;
+            margin: 15px 0 0 0;
         }
     }
 }

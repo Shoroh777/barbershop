@@ -26,8 +26,12 @@
             border: 1px solid #e5ddd5;
             margin-bottom: 20px;
 
+            display: flex;
+            flex-direction: column;
+
             .work-list__pic {
                 display: flex;
+                margin: 0 auto;
                 .work-list__img {
                 }
             }
