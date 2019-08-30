@@ -2,3 +2,13 @@
     box-sizing: border-box;
     background-color: #292929;
 }
+
+@include for-tablet {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 8.463541666666667vw;
+    }
+}

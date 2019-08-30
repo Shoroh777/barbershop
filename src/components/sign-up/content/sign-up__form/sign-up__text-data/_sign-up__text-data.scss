@@ -1,7 +1,8 @@
 .sign-up__text-data {
 
     .sign-up__headline {
-
+        margin: 30px 0;
+        text-align: center;
     }
 
     .sign-up__text-list {
@@ -11,7 +12,26 @@
             .sign-up__text-label {
 
                 .form__input {
+                    box-sizing: border-box;
+                    border: 1px solid #e5ddd5;
+                    margin-bottom: 5px;
+                    padding: 15px;
+                    width: 87.5vw;
+                    font-family: 'PT Sans Narrow', Arial, sans-serif;
+                    font-size: 18px;
+                    resize: none;
 
+                    &[name="user-second-name"],
+                    &[name="user-mail"] {
+                        margin-bottom: 30px;
+                    }
+
+                    &::placeholder {
+                        font-size: 18px;
+                        color: rgb(0, 0, 0);
+                        line-height: 1.667;
+                        font-weight: bold;
+                    }
                 }
             }
         }

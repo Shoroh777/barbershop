@@ -4,11 +4,25 @@
 @import "sign-up__form/sign-up__text-data/sign-up__text-data";
 
 .sign-up__container {
+    background-color: #f8f5f2;
 
     .sign-up {
+        display: flex;
+        justify-content: center;
 
         .sign-up__headline {
-            
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1;
         }
+    }
+
+    .sign-up__after {
+        background-color: #292929;
+        border: 50vw solid transparent;
+        border-top: 35px solid #f8f5f2;
+        border-bottom: 0;
     }
 }

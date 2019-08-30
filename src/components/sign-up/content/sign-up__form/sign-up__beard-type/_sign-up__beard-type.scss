@@ -1,21 +1,58 @@
 .sign-up__beard-type {
+    display: flex;
+    justify-content: center;
 
     .sign-up__beard-headline {
-
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.35;
+        text-align: center;
     }
 
     .sign-up__beard-list {
+        width: 87.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         .sign-up__beard-item {
+            float: left;
+            margin: 20px 15px;
 
             .sign-up__beard-label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 .sign-up__beard-checkbox {
+                    display: none;
+                }
 
+                .sign-up__bread-name {
+                    font-size: 18px;
+                    color: rgb(0, 0, 0);
+                    line-height: 1.333;
+                    text-align: center;
+                    box-sizing: border-box;
+
+                    &::before {
+                        box-sizing: border-box;
+                        content: url("../img/form/dot-big.png");
+                        display: block;
+
+                        width: 50px;
+                        height: 50px;
+                        left: 0;
+                    }
                 }
 
                 .sign-up__beard-img {
 
+                }
+
+                .sign-up__beard-checkbox:checked + .sign-up__bread-name:before {
+                    content: url("../img/form/dot-chek.png");
                 }
             }
         }

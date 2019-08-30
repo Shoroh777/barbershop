@@ -1,21 +1,17 @@
 .address {
-    padding: 35px 20px 0 20px;
 
     .address__headline {
         font-size: 18px;
         color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 1.5;
-        text-align: center;
         margin: 0;
     }
     .address__text {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         .address__text-line {
-            width: 62.5vw;
             font-size: 18px;
             color: rgb(255, 255, 255);
             line-height: 1.5;
@@ -23,22 +19,70 @@
         }
 
         .address__tel {
-            display: none;
         }
 
         .address__number {
             margin: 20px 0;
             box-sizing: border-box;
-            align-self: flex-start;
-            font-size: 18px;
             color: white;
-            font-weight: bold;
             text-transform: uppercase;
             line-height: 1.333;
-            text-align: center;
-            padding: 17px;
             width: 100%;
-            border: 1px solid #3e3e3e;
+        }
+    }
+}
+
+@include for-phone-only {
+    .address {
+        padding: 35px 20px 0 20px;
+
+        .address__headline {
+            text-align: center;
+        }
+        .address__text {
+            align-items: center;
+
+            .address__text-line {
+                width: 62.5vw;
+            }
+
+            .address__tel {
+                display: none;
+            }
+
+            .address__number {
+                border: 1px solid #3e3e3e;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 17px;
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .address {
+        order: 1;
+
+        .address__headline {
+            text-transform: uppercase;
+        }
+
+        .address__text {
+
+            .address__text-line {
+            }
+
+            .address__tel {
+                font-size: 16px;
+                color: rgb(255, 255, 255);
+                margin-top: 5px;
+            }
+
+            .address__number {
+                font-size: 16px;
+            }
         }
     }
 }

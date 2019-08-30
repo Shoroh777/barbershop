@@ -1,6 +1,15 @@
 .sign-up__form {
+    display: flex;
+    flex-direction: column;
 
     .form__submit {
-
+        background-color: #826550;
+        padding: 15px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        margin-bottom: 15px;
     }
 }

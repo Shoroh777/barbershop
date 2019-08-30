@@ -10,7 +10,6 @@
 
         .social__item {
             border: 1px solid #3f3f3f;
-            width: 33.3333333vw;
             height: 100px;
 
             .social__link {
@@ -21,6 +20,51 @@
 
                 .social__img {
                     margin:  0;
+                }
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .social {
+
+        .social__headline {
+        }
+
+        .social__list {
+
+            .social__item {
+                width: 33.3333333vw;
+
+                .social__link {
+
+                    .social__img {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .social {
+        justify-self: center;
+        box-sizing: border-box;
+        order: 3;
+
+        .social__headline {
+        }
+
+        .social__list {
+
+            .social__item {
+                width: 27.45vw;
+
+                .social__link {
+
+                    .social__img {
+                    }
                 }
             }
         }

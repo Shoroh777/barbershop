@@ -3,11 +3,8 @@
     align-items: center;
     justify-content: space-around;
 
-    border: 1px solid #484848;
-
     box-sizing: border-box;
     width: 100%;
-    max-width: 500px;
     margin-top: 20px;
     padding: 15px;
 
@@ -16,8 +13,37 @@
     }
 
     .discount__text {
-        font-size: 18px;
         color: rgb(255, 255, 255);
         line-height: 1.35;
+    }
+}
+
+@include for-phone-only {
+    .discount {
+        max-width: 500px;
+        border: 1px solid #484848;
+
+        .discount__img {
+        }
+
+        .discount__text {
+            font-size: 18px;
+        }
+    }
+}
+
+@include for-tablet {
+    .discount {
+
+        .discount__img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .discount__text {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     }
 }

@@ -4,8 +4,6 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 20px;
-
     background-color: #353535;
 
     .price-current__headline {
@@ -18,11 +16,38 @@
     }
 }
 
-.discount-after {
-    background-color: #292929;
-    width: 0;
-    height: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 35px solid #353535;
+
+
+@include for-phone-only {
+    .price-current {
+        padding: 20px;
+
+        .price-current__headline {
+        }
+    }
+
+    .discount-after {
+        display: flex;
+        justify-content: space-around;
+        background-color: #353535;
+        .discount-first {
+            height: 0;
+            border-left: 0;
+            border-right: 50vw solid transparent;
+            border-bottom: 35px solid #292929;
+        }
+        .discount-second {
+            height: 0;
+            border-left: 50vw solid transparent;
+            border-right: 0;
+            border-bottom: 35px solid #292929;
+        }
+    }
+}
+@include for-tablet {
+    .price-current {
+        padding: 40px 8.3333vw;
+        .price-current__headline {
+        }
+    }
 }

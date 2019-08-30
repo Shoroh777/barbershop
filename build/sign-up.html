@@ -21,6 +21,10 @@
                         <img src="img/header/logotype-mobile.png" alt="Перейти на главную страницу" class="logo__barbershop-img">
                     </picture>
                 </a>
+                <div class="logo-after-container">
+                    <div class="logo-first"></div>
+                    <div class="logo-second"></div>
+                </div>
             </div>
             <nav class="header__nav">
                 <button class="header__nav-menu-mobile" onclick="openMenu()">
@@ -46,8 +50,6 @@
     </header>
     <main class="sign-up__container">
         <section class="sign-up">
-            <h2 class="sign-up__headline">Запись на стрижку</h2>
-    
             <form class="sign-up__form">
             
                 <fieldset class="sign-up__text-data">
@@ -56,38 +58,38 @@
                     <ul class="sign-up__text-list">
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-surname" class="form__surname form__input" placeholder="Фамилия">
                                 <span class="visually-hidden">Введите свою фамилию</span>
+                                <input type="text" name="user-surname" class="form__surname form__input" placeholder="Фамилия">
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-name" class="form__name form__input" placeholder="Имя">
                                 <span class="visually-hidden">Введите свое имя</span>
+                                <input type="text" name="user-name" class="form__name form__input" placeholder="Имя">
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="text" name="user-second-name" class="form__second-name form__input" placeholder="Отчество">
                                 <span class="visually-hidden">Введите свое отчество</span>
+                                <input type="text" name="user-second-name" class="form__second-name form__input" placeholder="Отчество">
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="number" name="user-phone" class="form__phone form__input" placeholder="Контактный телефон">
                                 <span class="visually-hidden">Введите свой телефон</span>
+                                <input type="number" name="user-phone" class="form__phone form__input" placeholder="Контактный телефон">
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <input type="email" name="user-mail" class="form__e-mail form__input" placeholder="Контактный e-mail">
                                 <span class="visually-hidden">Введите свой e-mail</span>
+                                <input type="email" name="user-mail" class="form__e-mail form__input" placeholder="Контактный e-mail">
                             </label>
                         </li>
                         <li class="sign-up__text-item">
                             <label class="sign-up__text-label">
-                                <textarea name="additional-information" class="form__additional-info form__input" placeholder="Доп. информация для мастера"></textarea>
                                 <span class="visually-hidden">Дополнительная информация для мастера</span>
+                                <textarea rows="5" name="additional-information" class="form__additional-info form__input" placeholder="Доп. информация для мастера"></textarea>
                             </label>
                         </li>
                     </ul>
@@ -100,35 +102,35 @@
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="admiral" class="sign-up__beard-checkbox" checked>
-                                адмирал
+                                <span class="sign-up__bread-name">адмирал</span>
                                 <img src="img/form/beard-1.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="lumberjack" class="sign-up__beard-checkbox">
-                                лесоруб
+                                <span class="sign-up__bread-name">лесоруб</span>
                                 <img src="img/form/beard-2.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="polar" class="sign-up__beard-checkbox">
-                                полярник
+                                <span class="sign-up__bread-name">полярник</span>
                                 <img src="img/form/beard-3.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="boyar" class="sign-up__beard-checkbox">
-                                боярин
+                                <span class="sign-up__bread-name">боярин</span>
                                 <img src="img/form/beard-4.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
                         <li class="sign-up__beard-item">
                             <label class="sign-up__beard-label">
                                 <input type="radio" name="beard-type" value="sage" class="sign-up__beard-checkbox">
-                                мудрец
+                                <span class="sign-up__bread-name">мудрец</span>
                                 <img src="img/form/beard-5.png" alt="" class="sign-up__beard-img">
                             </label>
                         </li>
@@ -142,37 +144,37 @@
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="tint-beard" class="sign-up__additional-checkbox" checked>
-                                Подкрасить бороду
+                                <span class="sign-up__additional-label-text">Подкрасить бороду</span>
                             </label>
                         </li>
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="wind-mustache" class="sign-up__additional-checkbox" checked>
-                                Накрутить усы
+                                <span class="sign-up__additional-label-text">Накрутить усы</span>
                             </label>
                         </li>
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="comb-beard" class="sign-up__additional-checkbox">
-                                Причесать бороду
+                                <span class="sign-up__additional-label-text">Причесать бороду</span>
                             </label>
                         </li>
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="align-temples" class="sign-up__additional-checkbox">
-                                Подровнять виски
+                                <span class="sign-up__additional-label-text">Подровнять виски</span>
                             </label>
                         </li>
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="remove-gray-hair" class="sign-up__additional-checkbox">
-                                Убрать седину
+                                <span class="sign-up__additional-label-text">Убрать седину</span>
                             </label>
                         </li>
                         <li class="sign-up__additional-item">
                             <label class="sign-up__additional-label">
                                 <input type="checkbox" name="additional-service" value="polish-bald-head" class="sign-up__additional-checkbox">
-                                Отполировать лысину
+                                <span class="sign-up__additional-label-text">Отполировать лысину</span>
                             </label>
                         </li>
                     </ul>
@@ -182,9 +184,10 @@
             
             </form>
         </section>
+    
+        <div class="sign-up__after"></div>
     </main>
     <footer class="footer">
-    
         <section class="address">
         
             <h2 class="address__headline">
@@ -193,12 +196,12 @@
         
             <p class="address__text">
                 <span class="address__text-line">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
-                <label for="address__number-id" class="address__tel">
+                <label class="address__tel">
                     Тел.:
+                    <a href="tel:+78125556666" class="address__number">
+                        +7 (812) 555-66-66
+                    </a>
                 </label>
-                <a href="tel:+78125556666" class="address__number" id="address__number-id">
-                    +7 (812) 555-66-66
-                </a>
             </p>
         
         </section>

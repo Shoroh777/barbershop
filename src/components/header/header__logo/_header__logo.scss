@@ -1,5 +1,4 @@
 .logo {
-    padding: 29px 0 26px;
     display: flex;
     justify-content: center;
 
@@ -9,10 +8,6 @@
 
             .logo__barbershop-img {
 
-                @include for-phone-only {
-                    width: auto;
-                }
-
             }
         }
     }
@@ -20,4 +15,62 @@
 
 .logo-nav--open {
     margin-bottom: 50px;
+}
+
+@include for-phone-only {
+    .logo {
+        padding: 29px 0 26px;
+
+        .logo__link {
+
+            .logo__barbershop-pic {
+
+                .logo__barbershop-img {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .logo-nav--open {
+    }
+}
+
+@include for-tablet {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 0 0;
+        background: url("../img/header/back-tablet.jpg") 50% 50% no-repeat;
+        background-size: 100%;
+
+        .logo__link {
+            margin-bottom: 30px;
+
+            .logo__barbershop-pic {
+
+                .logo__barbershop-img {
+
+                }
+            }
+        }
+
+        .logo-after-container {
+            display: flex;
+            justify-content: space-around;
+            .logo-first {
+                height: 0;
+                border-left: 0;
+                border-right: 50vw solid transparent;
+                border-bottom: 45px solid #f8f5f2;
+            }
+            .logo-second {
+                height: 0;
+                border-left: 50vw solid transparent;
+                border-right: 0;
+                border-bottom: 45px solid #f8f5f2;
+            }
+        }
+    }
 }

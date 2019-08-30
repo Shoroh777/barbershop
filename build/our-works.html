@@ -21,6 +21,10 @@
                         <img src="img/header/logotype-mobile.png" alt="Перейти на главную страницу" class="logo__barbershop-img">
                     </picture>
                 </a>
+                <div class="logo-after-container">
+                    <div class="logo-first"></div>
+                    <div class="logo-second"></div>
+                </div>
             </div>
             <nav class="header__nav">
                 <button class="header__nav-menu-mobile" onclick="openMenu()">
@@ -49,12 +53,14 @@
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
     
         <section class="work-list">
-            <h2 class="work-list__healine">
-                Наши работы
-            </h2>
-            <button class="work-list__button-back">
-                На главную
-            </button>
+            <div class="work-list__headblock">
+                <h2 class="work-list__headline">
+                    Наши работы
+                </h2>
+                <button class="work-list__button-back">
+                    На главную
+                </button>
+            </div>
             <ul class="work-list__list">
                 <li class="work-list__item">
                     <picture class="work-list__pic">
@@ -160,7 +166,10 @@
             </ul>
         </section>
         
-        <div class="work-list__after"></div>
+        <div class="work-list__after">
+            <div class="work-list-first"></div>
+            <div class="work-list-second"></div>
+        </div>
         <section class="price-current">
         
             <h2 class="price-current__headline">
@@ -238,11 +247,13 @@
         
         </section>
         
-        <div class="discount-after"></div>
+        <div class="discount-after">
+            <div class="discount-first"></div>
+            <div class="discount-second"></div>
+        </div>
     
     </main>
     <footer class="footer">
-    
         <section class="address">
         
             <h2 class="address__headline">
@@ -251,12 +262,12 @@
         
             <p class="address__text">
                 <span class="address__text-line">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
-                <label for="address__number-id" class="address__tel">
+                <label class="address__tel">
                     Тел.:
+                    <a href="tel:+78125556666" class="address__number">
+                        +7 (812) 555-66-66
+                    </a>
                 </label>
-                <a href="tel:+78125556666" class="address__number" id="address__number-id">
-                    +7 (812) 555-66-66
-                </a>
             </p>
         
         </section>
