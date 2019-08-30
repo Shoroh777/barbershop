@@ -1,15 +1,11 @@
 .price__list {
     display: flex;
-    flex-direction: column;
     margin: 0;
 
     .price__element {
-        height: 78px;
         padding: 0 20px;
 
         display: flex;
-        justify-content: space-between;
-        align-items: center;
 
 
         &:nth-child(1) {
@@ -26,18 +22,84 @@
         }
 
         .price__value {
-            font-size: 40px;
             color: rgb(255, 255, 255);
             font-weight: bold;
-            line-height: 0.45;
         }
 
         .price__description {
-            width: 34.375vw;
-            font-size: 18px;
             color: rgb(247, 244, 241);
-            line-height: 1;
-            text-align: right;
+
+            .price__description-mobile {
+
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .price__list {
+        flex-direction: column;
+
+        .price__element {
+            justify-content: space-between;
+            align-items: center;
+
+            height: 78px;
+
+            .price__value {
+                font-size: 40px;
+                line-height: 0.45;
+            }
+
+            .price__description {
+                width: 34.375vw;
+                text-align: right;
+
+                line-height: 1;
+                font-size: 18px;
+
+                .price__description-mobile {
+
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .price__list {
+        order: 3;
+        background-color: #353535;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .price__element {
+            box-sizing: border-box;
+            width: 41.66666666666667vw;
+            flex-direction: column;
+            min-height: 160px;
+            padding: 60px 30px;
+
+            .price__value {
+                margin: 0;
+
+                font-size: 72px;
+                line-height: 0.25;
+            }
+
+            .price__description {
+                margin: 0;
+                box-sizing: border-box;
+                font-size: 20px;
+                color: rgb(247, 244, 241);
+                line-height: 1.35;
+
+                padding-top: 40px;
+
+                .price__description-mobile {
+                    display: none;
+                }
+            }
         }
     }
 }

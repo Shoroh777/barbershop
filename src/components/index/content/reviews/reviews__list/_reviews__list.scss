@@ -1,6 +1,5 @@
 .reviews__list {
     box-sizing: border-box;
-    max-width: 100vw;
     padding: 0 20px;
 
     .reviews__item {
@@ -74,6 +73,87 @@
             .news-indicator__img {
                 background-color: #353535;
                 border: 1px solid #959595;
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .reviews__list {
+        max-width: 100vw;
+
+        .reviews__item {
+
+            .reviews__pic {
+
+                .reviews__img {
+
+                }
+            }
+
+            .reviews__person {
+
+                .reviews__name {
+                }
+
+                .reviews__text {
+                }
+            }
+        }
+        .news-indicator {
+
+            .news-indicator__img {
+            }
+
+            li {
+            }
+
+            li .slick-active {
+            }
+            .slick-active {
+                .news-indicator__img {
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .reviews__list {
+        width: 70.3125vw;
+        border: 1px solid #e5ddd5;
+
+        .reviews__item {
+
+            .reviews__pic {
+
+                .reviews__img {
+
+                }
+            }
+
+            .reviews__person {
+
+                .reviews__name {
+                }
+
+                .reviews__text {
+                }
+            }
+        }
+        .news-indicator {
+
+            .news-indicator__img {
+            }
+
+            li {
+            }
+
+            li .slick-active {
+            }
+            .slick-active {
+                .news-indicator__img {
+                }
             }
         }
     }

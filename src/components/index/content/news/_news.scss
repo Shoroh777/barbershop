@@ -1,6 +1,5 @@
 .news {
     display: flex;
-    flex-direction: column;
     background-color: #f8f5f2;
 
     padding: 35px 20px 28px 20px;
@@ -23,7 +22,6 @@
         text-transform: uppercase;
         line-height: 1.333;
         text-align: center;
-        order: 4;
         padding: 17px;
         border: 1px solid #e5ddd5;
     }
@@ -35,9 +33,6 @@
             margin-top: 25px;
             padding-bottom: 20px;
 
-            &:first-child {
-                border-bottom: 1px solid #e5ddd5;
-            }
 
             &:last-child {
                 display: none;
@@ -80,11 +75,104 @@
                 }
 
                 .news__text {
-                    width: 65.625vw;
                     font-size: 18px;
                     color: rgb(0, 0, 0);
                     line-height: 1.5;
                     margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .news {
+        flex-direction: column;
+
+        .news__headline {
+        }
+
+        .news__button {
+            order: 4;
+        }
+
+        .news__list {
+
+            .news__item {
+
+                &:first-child {
+                    border-bottom: 1px solid #e5ddd5;
+                }
+
+                .news__link {
+
+                    .news__date {
+
+                        .news__date-value {
+                        }
+
+                        .news__month {
+                        }
+
+                        .news__link-arrow {
+                        }
+                    }
+
+                    .news__text {
+                        width: 65.625vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .news {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .news__headline {
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 0.75;
+            margin-left: 5.859375vw;
+        }
+
+        .news__button {
+            padding: 17px 30px;
+            margin-right: 5.859375vw;
+        }
+
+        .news__list {
+            display: flex;
+            margin: 0 auto;
+            width: 83.33333333333333vw;
+            justify-content: space-between;
+
+            .news__item {
+                width: 48%;
+
+                .news__link {
+
+                    .news__date {
+
+                        .news__date-value {
+                        }
+
+                        .news__month {
+                        }
+
+                        .news__link-arrow {
+                        }
+                    }
+
+                    .news__text {
+                        margin: 0 20px;
+                    }
                 }
             }
         }

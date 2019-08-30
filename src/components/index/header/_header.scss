@@ -1,0 +1,29 @@
+.header-index {
+    width: 100%;
+
+    background-color: #242424;
+
+    display: flex;
+    justify-content: center;
+
+    .header__container-index {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@include for-phone-only() {
+    .header-index {
+        .header__container-index {
+            flex-direction: column;
+        }
+    }
+}
+
+@include for-tablet() {
+    .header-index {
+        .header__container-index {
+            flex-direction: column-reverse;
+        }
+    }
+}

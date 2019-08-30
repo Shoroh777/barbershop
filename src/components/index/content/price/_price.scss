@@ -2,33 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f8f5f2;
 
     .price__top {
-        width: 76.5625vw;
-
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-self: center;
 
         .price__headline {
-            margin: 30px 0;
-            width: 70vw;
             font-size: 30px;
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1;
-            text-align: center;
         }
 
         .price__text {
-            margin: 0 0 25px 0;
             font-size: 20px;
             color: rgb(0, 0, 0);
             line-height: 1.35;
-            text-align: center;
         }
     }
 
@@ -40,5 +30,88 @@
         line-height: 1.35;
         text-align: center;
         background-color: #242424;
+    }
+}
+
+@include for-phone-only {
+    .price {
+        background-color: #f8f5f2;
+
+        .price__top {
+            width: 76.5625vw;
+
+            flex-direction: column;
+            justify-content: center;
+
+            .price__headline {
+                width: 70vw;
+                margin: 30px 0;
+                text-align: center;
+            }
+
+            .price__text {
+                text-align: center;
+                margin: 0 0 25px 0;
+            }
+        }
+
+        .price__ps {
+        }
+    }
+}
+
+@include for-tablet {
+    .price {
+        background-color: transparent;
+
+        .price__top {
+            box-sizing: border-box;
+            padding: 35px 40px 0 40px;
+            order: 1;
+            margin-top: -185px;
+            height: 185px;
+            width: 83.33333333333333vw;
+            background-color: white;
+
+            justify-content: space-between;
+
+
+            .price__headline {
+                width: 50%;
+                margin: 0;
+
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                line-height: 1;
+            }
+
+            .price__text {
+                width: 38%;
+                margin: 0;
+                padding-right: 5%;
+
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                line-height: 1.35;
+            }
+        }
+
+        .price__ps {
+            background-color: transparent;
+            align-self: center;
+            box-sizing: border-box;
+            order: 2;
+            height: 70px;
+            margin-top: -70px;
+            width: 83.33333333333333vw;
+            padding-top: 15px;
+            padding-left: 40px;
+
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.302);
+            line-height: 1.35;
+            text-align: left;
+        }
     }
 }

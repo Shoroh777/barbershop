@@ -20,7 +20,6 @@
     .reviews__comment {
 
         .reviews__control-left {
-            display: none;
 
             .reviews__control-img {
 
@@ -28,7 +27,6 @@
         }
 
         .reviews__control-right {
-            display: none;
 
             .reviews__control-img {
 
@@ -52,5 +50,86 @@
         border-left: 50vw solid transparent;
         border-right: 0;
         border-bottom: 35px solid #292929;
+    }
+}
+
+@include for-phone-only {
+    .reviews {
+
+
+        .reviews__headline {
+        }
+
+        .reviews__button {
+        }
+
+        .reviews__comment {
+
+            .reviews__control-left {
+                display: none;
+
+                .reviews__control-img {
+
+                }
+            }
+
+            .reviews__control-right {
+                display: none;
+
+                .reviews__control-img {
+
+                }
+            }
+        }
+    }
+
+    .news-after {
+
+        .news-first {
+        }
+        .news-second {
+        }
+    }
+}
+
+@include for-tablet {
+    .reviews {
+
+
+        .reviews__headline {
+        }
+
+        .reviews__button {
+        }
+
+        .reviews__comment {
+            display: flex;
+            justify-content: center;
+
+            .reviews__control-left {
+
+                .reviews__control-img {
+
+                }
+            }
+
+            .reviews__control-right {
+
+                .reviews__control-img {
+
+                }
+            }
+        }
+    }
+
+    .news-after {
+        display: none;
+
+        .news-first {
+
+        }
+        .news-second {
+
+        }
     }
 }
