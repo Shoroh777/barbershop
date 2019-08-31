@@ -1,20 +1,16 @@
 .reviews {
     box-sizing: border-box;
     background-color: #f8f5f2;
-    padding-bottom: 10px;
 
 
     .reviews__headline {
-        font-size: 30px;
         color: rgb(0, 0, 0);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1;
-        text-align: center;
     }
 
     .reviews__button {
-        display: none;
     }
 
     .reviews__comment {
@@ -55,12 +51,16 @@
 
 @include for-phone-only {
     .reviews {
+        padding-bottom: 10px;
 
 
         .reviews__headline {
+            font-size: 30px;
+            text-align: center;
         }
 
         .reviews__button {
+            display: none;
         }
 
         .reviews__comment {
@@ -94,19 +94,42 @@
 
 @include for-tablet {
     .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 60px;
 
 
         .reviews__headline {
+            font-size: 40px;
+            margin-left: 8.46354166666vw;
         }
 
         .reviews__button {
+            padding: 17px 25px;
+            margin-right: 8.46354166666vw;
+
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.333;
+            text-align: center;
+            border: 1px solid #e5ddd5;
         }
 
         .reviews__comment {
+            margin-left: 8.46354166666vw;
             display: flex;
             justify-content: center;
 
             .reviews__control-left {
+                box-sizing: border-box;
+                margin-top: 16px;
+                padding: 2.6vw;
+                border: 1px solid #e5ddd5;
+                border-right: none;
 
                 .reviews__control-img {
 
@@ -114,6 +137,11 @@
             }
 
             .reviews__control-right {
+                box-sizing: border-box;
+                margin-top: 16px;
+                padding: 2.6vw;
+                border: 1px solid #e5ddd5;
+                border-left: none;
 
                 .reviews__control-img {
 

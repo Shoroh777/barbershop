@@ -1,6 +1,5 @@
 .reviews__list {
     box-sizing: border-box;
-    padding: 0 20px;
 
     .reviews__item {
         display: flex !important;
@@ -40,7 +39,6 @@
         }
     }
     .news-indicator {
-        width: 25vw;
         margin: 30px auto 0 auto;
 
         display: flex !important;
@@ -51,8 +49,6 @@
             box-sizing: border-box;
             max-height: 15px;
             max-width: 15px;
-            width: 3.128vw;
-            height: 3.128vw;
             background-color: transparent;
             border: 2px solid #959595;
             transform: rotate(-45deg);
@@ -60,13 +56,9 @@
         }
 
         li {
-            width: 3.128vw;
-            height: 3.128vw;
         }
 
         li .slick-active {
-            width: 3.128vw;
-            height: 3.128vw;
             background-color: white;
         }
         .slick-active {
@@ -81,6 +73,7 @@
 @include for-phone-only {
     .reviews__list {
         max-width: 100vw;
+        padding: 0 20px;
 
         .reviews__item {
 
@@ -101,14 +94,21 @@
             }
         }
         .news-indicator {
+            width: 25vw;
 
             .news-indicator__img {
+                width: 3.128vw;
+                height: 3.128vw;
             }
 
             li {
+                width: 3.128vw;
+                height: 3.128vw;
             }
 
             li .slick-active {
+                width: 3.128vw;
+                height: 3.128vw;
             }
             .slick-active {
                 .news-indicator__img {
@@ -120,12 +120,15 @@
 
 @include for-tablet {
     .reviews__list {
+
         width: 70.3125vw;
         border: 1px solid #e5ddd5;
+        padding: 30px;
 
         .reviews__item {
 
             .reviews__pic {
+                margin-right: 30px;
 
                 .reviews__img {
 
@@ -142,8 +145,21 @@
             }
         }
         .news-indicator {
+            margin-left: 23.43vw;
+            width: 17.27vw;
+            margin-top: 20px;
+
+            position: absolute;
+            background-color: #f8f5f2;
+            display: flex;
+            justify-content: space-around;
+
 
             .news-indicator__img {
+                margin: 7px 0 0 12px;
+                width: 10px;
+                height: 10px;
+
             }
 
             li {
