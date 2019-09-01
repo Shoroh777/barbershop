@@ -11,11 +11,9 @@
         justify-content: center;
 
         .sign-up__headline {
-            font-size: 30px;
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-transform: uppercase;
-            line-height: 1;
         }
     }
 
@@ -24,5 +22,53 @@
         border: 50vw solid transparent;
         border-top: 35px solid #f8f5f2;
         border-bottom: 0;
+    }
+}
+
+@include for-phone-only {
+    .sign-up__container {
+
+        .sign-up {
+
+            .sign-up__headline {
+                font-size: 30px;
+                line-height: 1;
+            }
+        }
+
+        .sign-up__after {
+        }
+    }
+}
+
+@include for-tablet {
+    .sign-up__container {
+
+        .sign-up {
+
+            .sign-up__headline {
+                font-size: 40px;
+                line-height: 0.75;
+
+                justify-self: flex-start;
+            }
+        }
+
+        .sign-up__after {
+        }
+    }
+}
+
+@include for-desktop {
+    .sign-up__container {
+
+        .sign-up {
+
+            .sign-up__headline {
+            }
+        }
+
+        .sign-up__after {
+        }
     }
 }

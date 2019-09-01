@@ -27,3 +27,11 @@
         }
     }
 }
+
+@include for-desktop {
+    .header-index {
+        .header__container-index {
+            flex-direction: column-reverse;
+        }
+    }
+}

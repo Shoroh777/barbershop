@@ -3,7 +3,6 @@
     justify-content: center;
 
     .sign-up__beard-headline {
-        font-size: 20px;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
         line-height: 1.35;
@@ -11,7 +10,6 @@
     }
 
     .sign-up__beard-list {
-        width: 87.5vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -30,7 +28,6 @@
                 }
 
                 .sign-up__bread-name {
-                    font-size: 18px;
                     color: rgb(0, 0, 0);
                     line-height: 1.333;
                     text-align: center;
@@ -53,6 +50,79 @@
 
                 .sign-up__beard-checkbox:checked + .sign-up__bread-name:before {
                     content: url("../img/form/dot-chek.png");
+                }
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .sign-up__beard-type {
+
+        .sign-up__beard-headline {
+            font-size: 20px;
+        }
+
+        .sign-up__beard-list {
+            width: 87.5vw;
+
+            .sign-up__beard-item {
+
+                .sign-up__beard-label {
+
+                    .sign-up__beard-checkbox {
+                    }
+
+                    .sign-up__bread-name {
+                        font-size: 18px;
+
+                        &::before {
+                        }
+                    }
+
+                    .sign-up__beard-img {
+
+                    }
+
+                    .sign-up__beard-checkbox:checked + .sign-up__bread-name:before {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .sign-up__beard-type {
+
+        .sign-up__beard-headline {
+            font-size: 30px;
+        }
+
+        .sign-up__beard-list {
+            width: 83.33333333333333vw;
+
+            .sign-up__beard-item {
+
+                .sign-up__beard-label {
+
+                    .sign-up__beard-checkbox {
+                    }
+
+                    .sign-up__bread-name {
+                        font-size: 24px;
+
+                        &::before {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .sign-up__beard-img {
+
+                    }
+
+                    .sign-up__beard-checkbox:checked + .sign-up__bread-name:before {
+                    }
                 }
             }
         }

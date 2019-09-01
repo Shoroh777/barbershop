@@ -42,6 +42,12 @@ $(document).ready(function(){
                 settings: {
                     dots: true,
                 }
+            },
+            {
+                breakpoint: 120000,
+                settings: {
+                    dots: true,
+                }
             }
         ],
         dotsClass: 'news-indicator__dots news-indicator',

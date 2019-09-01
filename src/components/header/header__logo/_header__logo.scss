@@ -74,3 +74,42 @@
         }
     }
 }
+
+@include for-desktop {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 0 0;
+        background: url("../img/header/back-tablet.jpg") 50% 50% no-repeat;
+        background-size: 100%;
+
+        .logo__link {
+            margin-bottom: 30px;
+
+            .logo__barbershop-pic {
+
+                .logo__barbershop-img {
+
+                }
+            }
+        }
+
+        .logo-after-container {
+            display: flex;
+            justify-content: space-around;
+            .logo-first {
+                height: 0;
+                border-left: 0;
+                border-right: 50vw solid transparent;
+                border-bottom: 45px solid #f8f5f2;
+            }
+            .logo-second {
+                height: 0;
+                border-left: 50vw solid transparent;
+                border-right: 0;
+                border-bottom: 45px solid #f8f5f2;
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
 .sign-up__additional {
 
     .sign-up__additional-headline {
-        font-size: 20px;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
         line-height: 1.35;
@@ -23,7 +22,6 @@
                 .sign-up__additional-label-text {
                     display: flex;
 
-                    font-size: 18px;
                     color: rgb(0, 0, 0);
                     line-height: 1.667;
 
@@ -40,6 +38,74 @@
 
                 .sign-up__additional-checkbox:checked + .sign-up__additional-label-text:before {
                     content: url("../img/form/checkbox-checked.png");
+                }
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .sign-up__additional {
+
+        .sign-up__additional-headline {
+            font-size: 20px;
+        }
+
+        .sign-up__additional-list {
+
+            .sign-up__additional-item {
+
+                .sign-up__additional-label {
+
+
+                    .sign-up__additional-checkbox {
+                    }
+
+                    .sign-up__additional-label-text {
+                        font-size: 18px;
+
+                        &::before {
+                        }
+                    }
+
+                    .sign-up__additional-checkbox:checked + .sign-up__additional-label-text:before {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .sign-up__additional {
+
+        .sign-up__additional-headline {
+            font-size: 30px;
+        }
+
+        .sign-up__additional-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .sign-up__additional-item {
+                width: 50%;
+                margin: 15px 0;
+
+                .sign-up__additional-label {
+
+
+                    .sign-up__additional-checkbox {
+                    }
+
+                    .sign-up__additional-label-text {
+                        font-size: 24px;
+
+                        &::before {
+                        }
+                    }
+
+                    .sign-up__additional-checkbox:checked + .sign-up__additional-label-text:before {
+                    }
                 }
             }
         }
